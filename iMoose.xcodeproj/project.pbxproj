@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		845C62571AE5802700F48ACA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C62561AE5802700F48ACA /* AppDelegate.swift */; };
+		845C625A1AE5802700F48ACA /* iMoose.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 845C62581AE5802700F48ACA /* iMoose.xcdatamodeld */; };
+		845C625C1AE5802700F48ACA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C625B1AE5802700F48ACA /* ViewController.swift */; };
+		845C625F1AE5802700F48ACA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845C625D1AE5802700F48ACA /* Main.storyboard */; };
+		845C62611AE5802700F48ACA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845C62601AE5802700F48ACA /* Images.xcassets */; };
+		845C62641AE5802700F48ACA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845C62621AE5802700F48ACA /* LaunchScreen.xib */; };
+		845C62701AE5802700F48ACA /* iMooseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C626F1AE5802700F48ACA /* iMooseTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		845C626A1AE5802700F48ACA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 845C62491AE5802700F48ACA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 845C62501AE5802700F48ACA;
+			remoteInfo = iMoose;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		845C62511AE5802700F48ACA /* iMoose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMoose.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		845C62551AE5802700F48ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845C62561AE5802700F48ACA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		845C62591AE5802700F48ACA /* iMoose.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iMoose.xcdatamodel; sourceTree = "<group>"; };
+		845C625B1AE5802700F48ACA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		845C625E1AE5802700F48ACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		845C62601AE5802700F48ACA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		845C62631AE5802700F48ACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		845C62691AE5802700F48ACA /* iMooseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMooseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		845C626E1AE5802700F48ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845C626F1AE5802700F48ACA /* iMooseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMooseTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		845C624E1AE5802700F48ACA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845C62661AE5802700F48ACA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		845C62481AE5802700F48ACA = {
+			isa = PBXGroup;
+			children = (
+				845C62531AE5802700F48ACA /* iMoose */,
+				845C626C1AE5802700F48ACA /* iMooseTests */,
+				845C62521AE5802700F48ACA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		845C62521AE5802700F48ACA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				845C62511AE5802700F48ACA /* iMoose.app */,
+				845C62691AE5802700F48ACA /* iMooseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		845C62531AE5802700F48ACA /* iMoose */ = {
+			isa = PBXGroup;
+			children = (
+				845C62561AE5802700F48ACA /* AppDelegate.swift */,
+				845C625B1AE5802700F48ACA /* ViewController.swift */,
+				845C625D1AE5802700F48ACA /* Main.storyboard */,
+				845C62601AE5802700F48ACA /* Images.xcassets */,
+				845C62621AE5802700F48ACA /* LaunchScreen.xib */,
+				845C62581AE5802700F48ACA /* iMoose.xcdatamodeld */,
+				845C62541AE5802700F48ACA /* Supporting Files */,
+			);
+			path = iMoose;
+			sourceTree = "<group>";
+		};
+		845C62541AE5802700F48ACA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				845C62551AE5802700F48ACA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		845C626C1AE5802700F48ACA /* iMooseTests */ = {
+			isa = PBXGroup;
+			children = (
+				845C626F1AE5802700F48ACA /* iMooseTests.swift */,
+				845C626D1AE5802700F48ACA /* Supporting Files */,
+			);
+			path = iMooseTests;
+			sourceTree = "<group>";
+		};
+		845C626D1AE5802700F48ACA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				845C626E1AE5802700F48ACA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		845C62501AE5802700F48ACA /* iMoose */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 845C62731AE5802700F48ACA /* Build configuration list for PBXNativeTarget "iMoose" */;
+			buildPhases = (
+				845C624D1AE5802700F48ACA /* Sources */,
+				845C624E1AE5802700F48ACA /* Frameworks */,
+				845C624F1AE5802700F48ACA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iMoose;
+			productName = iMoose;
+			productReference = 845C62511AE5802700F48ACA /* iMoose.app */;
+			productType = "com.apple.product-type.application";
+		};
+		845C62681AE5802700F48ACA /* iMooseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 845C62761AE5802700F48ACA /* Build configuration list for PBXNativeTarget "iMooseTests" */;
+			buildPhases = (
+				845C62651AE5802700F48ACA /* Sources */,
+				845C62661AE5802700F48ACA /* Frameworks */,
+				845C62671AE5802700F48ACA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				845C626B1AE5802700F48ACA /* PBXTargetDependency */,
+			);
+			name = iMooseTests;
+			productName = iMooseTests;
+			productReference = 845C62691AE5802700F48ACA /* iMooseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		845C62491AE5802700F48ACA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Bpenderg;
+				TargetAttributes = {
+					845C62501AE5802700F48ACA = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					845C62681AE5802700F48ACA = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 845C62501AE5802700F48ACA;
+					};
+				};
+			};
+			buildConfigurationList = 845C624C1AE5802700F48ACA /* Build configuration list for PBXProject "iMoose" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 845C62481AE5802700F48ACA;
+			productRefGroup = 845C62521AE5802700F48ACA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				845C62501AE5802700F48ACA /* iMoose */,
+				845C62681AE5802700F48ACA /* iMooseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		845C624F1AE5802700F48ACA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845C625F1AE5802700F48ACA /* Main.storyboard in Resources */,
+				845C62641AE5802700F48ACA /* LaunchScreen.xib in Resources */,
+				845C62611AE5802700F48ACA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845C62671AE5802700F48ACA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		845C624D1AE5802700F48ACA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845C625C1AE5802700F48ACA /* ViewController.swift in Sources */,
+				845C62571AE5802700F48ACA /* AppDelegate.swift in Sources */,
+				845C625A1AE5802700F48ACA /* iMoose.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845C62651AE5802700F48ACA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845C62701AE5802700F48ACA /* iMooseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		845C626B1AE5802700F48ACA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 845C62501AE5802700F48ACA /* iMoose */;
+			targetProxy = 845C626A1AE5802700F48ACA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		845C625D1AE5802700F48ACA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				845C625E1AE5802700F48ACA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		845C62621AE5802700F48ACA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				845C62631AE5802700F48ACA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		845C62711AE5802700F48ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		845C62721AE5802700F48ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		845C62741AE5802700F48ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iMoose/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		845C62751AE5802700F48ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iMoose/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		845C62771AE5802700F48ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iMooseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iMoose.app/iMoose";
+			};
+			name = Debug;
+		};
+		845C62781AE5802700F48ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iMooseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iMoose.app/iMoose";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		845C624C1AE5802700F48ACA /* Build configuration list for PBXProject "iMoose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845C62711AE5802700F48ACA /* Debug */,
+				845C62721AE5802700F48ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		845C62731AE5802700F48ACA /* Build configuration list for PBXNativeTarget "iMoose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845C62741AE5802700F48ACA /* Debug */,
+				845C62751AE5802700F48ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		845C62761AE5802700F48ACA /* Build configuration list for PBXNativeTarget "iMooseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845C62771AE5802700F48ACA /* Debug */,
+				845C62781AE5802700F48ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		845C62581AE5802700F48ACA /* iMoose.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				845C62591AE5802700F48ACA /* iMoose.xcdatamodel */,
+			);
+			currentVersion = 845C62591AE5802700F48ACA /* iMoose.xcdatamodel */;
+			path = iMoose.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 845C62491AE5802700F48ACA /* Project object */;
+}
