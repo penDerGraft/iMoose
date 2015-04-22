@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		845C62571AE5802700F48ACA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C62561AE5802700F48ACA /* AppDelegate.swift */; };
 		845C625A1AE5802700F48ACA /* iMoose.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 845C62581AE5802700F48ACA /* iMoose.xcdatamodeld */; };
-		845C625C1AE5802700F48ACA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C625B1AE5802700F48ACA /* ViewController.swift */; };
 		845C625F1AE5802700F48ACA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845C625D1AE5802700F48ACA /* Main.storyboard */; };
 		845C62611AE5802700F48ACA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845C62601AE5802700F48ACA /* Images.xcassets */; };
 		845C62641AE5802700F48ACA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845C62621AE5802700F48ACA /* LaunchScreen.xib */; };
 		845C62701AE5802700F48ACA /* iMooseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C626F1AE5802700F48ACA /* iMooseTests.swift */; };
+		845C627A1AE58B9500F48ACA /* NewAnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C62791AE58B9500F48ACA /* NewAnimalViewController.swift */; };
+		845C627C1AE58BD500F48ACA /* AnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C627B1AE58BD500F48ACA /* AnimalsViewController.swift */; };
+		84886F7C1AE6FE37007F2574 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84886F7B1AE6FE37007F2574 /* MapKit.framework */; };
+		84886F7E1AE712BB007F2574 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84886F7D1AE712BB007F2574 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +34,16 @@
 		845C62551AE5802700F48ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		845C62561AE5802700F48ACA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		845C62591AE5802700F48ACA /* iMoose.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iMoose.xcdatamodel; sourceTree = "<group>"; };
-		845C625B1AE5802700F48ACA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		845C625E1AE5802700F48ACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		845C62601AE5802700F48ACA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		845C62631AE5802700F48ACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		845C62691AE5802700F48ACA /* iMooseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMooseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		845C626E1AE5802700F48ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		845C626F1AE5802700F48ACA /* iMooseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMooseTests.swift; sourceTree = "<group>"; };
+		845C62791AE58B9500F48ACA /* NewAnimalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAnimalViewController.swift; sourceTree = "<group>"; };
+		845C627B1AE58BD500F48ACA /* AnimalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalsViewController.swift; sourceTree = "<group>"; };
+		84886F7B1AE6FE37007F2574 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		84886F7D1AE712BB007F2574 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84886F7E1AE712BB007F2574 /* CoreLocation.framework in Frameworks */,
+				84886F7C1AE6FE37007F2574 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +69,8 @@
 		845C62481AE5802700F48ACA = {
 			isa = PBXGroup;
 			children = (
+				84886F7D1AE712BB007F2574 /* CoreLocation.framework */,
+				84886F7B1AE6FE37007F2574 /* MapKit.framework */,
 				845C62531AE5802700F48ACA /* iMoose */,
 				845C626C1AE5802700F48ACA /* iMooseTests */,
 				845C62521AE5802700F48ACA /* Products */,
@@ -79,11 +89,9 @@
 		845C62531AE5802700F48ACA /* iMoose */ = {
 			isa = PBXGroup;
 			children = (
-				845C62561AE5802700F48ACA /* AppDelegate.swift */,
-				845C625B1AE5802700F48ACA /* ViewController.swift */,
+				845C62791AE58B9500F48ACA /* NewAnimalViewController.swift */,
 				845C625D1AE5802700F48ACA /* Main.storyboard */,
-				845C62601AE5802700F48ACA /* Images.xcassets */,
-				845C62621AE5802700F48ACA /* LaunchScreen.xib */,
+				845C627B1AE58BD500F48ACA /* AnimalsViewController.swift */,
 				845C62581AE5802700F48ACA /* iMoose.xcdatamodeld */,
 				845C62541AE5802700F48ACA /* Supporting Files */,
 			);
@@ -93,6 +101,9 @@
 		845C62541AE5802700F48ACA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				845C62601AE5802700F48ACA /* Images.xcassets */,
+				845C62621AE5802700F48ACA /* LaunchScreen.xib */,
+				845C62561AE5802700F48ACA /* AppDelegate.swift */,
 				845C62551AE5802700F48ACA /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -164,6 +175,11 @@
 				TargetAttributes = {
 					845C62501AE5802700F48ACA = {
 						CreatedOnToolsVersion = 6.3;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					845C62681AE5802700F48ACA = {
 						CreatedOnToolsVersion = 6.3;
@@ -215,8 +231,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				845C625C1AE5802700F48ACA /* ViewController.swift in Sources */,
+				845C627A1AE58B9500F48ACA /* NewAnimalViewController.swift in Sources */,
 				845C62571AE5802700F48ACA /* AppDelegate.swift in Sources */,
+				845C627C1AE58BD500F48ACA /* AnimalsViewController.swift in Sources */,
 				845C625A1AE5802700F48ACA /* iMoose.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +430,7 @@
 				845C62751AE5802700F48ACA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		845C62761AE5802700F48ACA /* Build configuration list for PBXNativeTarget "iMooseTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +439,7 @@
 				845C62781AE5802700F48ACA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
