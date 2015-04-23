@@ -48,6 +48,48 @@ class AnimalMapViewController: UIViewController, MKMapViewDelegate {
         
     }
     
+    
+    
+    func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
+        var view = mapView.dequeueReusableAnnotationViewWithIdentifier(Constants.AnnotationViewReuseIdentifier)
+        
+        if view == nil {
+            view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: Constants.AnnotationViewReuseIdentifier)
+            view.canShowCallout = true
+        } else {
+            view.annotation = annotation
+        }
+        
+        view.leftCalloutAccessoryView = nil
+        view.rightCalloutAccessoryView = nil
+        if let point = annotation as? Animal {
+            if UIImage(data: point.photo) != nil {
+                view.leftCalloutAccessoryView = UIImageView(frame: Constants.LeftCalloutFrame)
+            }
+            view.rightCalloutAccessoryView = UIButton.buttonWithType(UIButtonType.DetailDisclosure) as! UIButton
+
+        }
+        
+        return view
+    }
+    
+    func mapView(mapView: MKMapView!, didSelectAnnotationView view: MKAnnotationView!) {
+        if let point = view.annotation as? Animal {
+            if let thumbnailImageView = view.leftCalloutAccessoryView as? UIImageView {
+                if UIImage(data: point.photo) != nil {
+                    thumbnailImageView.image = UIImage(data: point.photo)
+                }
+            }
+        }
+    }
+    
+    
+    private struct Constants {
+        static let LeftCalloutFrame = CGRect(x: 0, y: 0, width: 59, height: 59)
+        static let AnnotationViewReuseIdentifier = "animal"
+        static let ShowImageSegue = "Show Details"
+    }
+    
 
     /*
     // MARK: - Navigation

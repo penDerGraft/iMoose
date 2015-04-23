@@ -9,8 +9,9 @@
 import UIKit
 import CoreData
 import CoreLocation
+import MobileCoreServices
 
-class NewAnimalViewController: UIViewController, CLLocationManagerDelegate {
+class NewAnimalViewController: UIViewController, CLLocationManagerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     let locationManager = CLLocationManager()
     
@@ -18,6 +19,8 @@ class NewAnimalViewController: UIViewController, CLLocationManagerDelegate {
         latitude: 0.0,
         longitude: 0.0
     )
+    
+    var animalImage = UIImage(named:"default.png")
     
 
     override func viewDidLoad() {
@@ -61,6 +64,29 @@ class NewAnimalViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var weightLabel: UILabel!
 
     
+    @IBAction func takePhoto() {
+        if UIImagePickerController.isSourceTypeAvailable(.Camera) {
+            let picker = UIImagePickerController()
+            picker.sourceType = .Camera
+            picker.mediaTypes = [kUTTypeImage]
+            picker.delegate = self
+            presentViewController(picker, animated: true, completion: nil)
+        }
+        
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+        var image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        if let newImage = image {
+            animalImage = image!
+        }
+        dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     
     @IBAction func saveAnimal(sender: UIButton) {
         let species = speciesTextBox.text
@@ -91,6 +117,11 @@ class NewAnimalViewController: UIViewController, CLLocationManagerDelegate {
         
         if coordinates.longitude != 0.0 {
             animal.setValue(coordinates.longitude, forKey: "longitude")
+        }
+        
+        if let image = animalImage {
+            var imageData = UIImagePNGRepresentation(image)
+            animal.setValue(imageData, forKey: "photo")
         }
         
         println(coordinates.latitude)
