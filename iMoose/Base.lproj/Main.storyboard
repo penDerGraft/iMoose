@@ -132,7 +132,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="90D-MU-QiC"/>
                         <barButtonItem key="rightBarButtonItem" title="Show All" id="Feb-RG-8PC">
                             <connections>
-                                <segue destination="MAM-w1-kkb" kind="show" id="3CA-dK-O4F"/>
+                                <segue destination="LJ5-ax-tns" kind="show" id="6EB-fr-VNh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -189,7 +189,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Zu-3V-3SU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2058" y="293.25"/>
+            <point key="canvasLocation" x="3624" y="387.75"/>
+        </scene>
+        <!--Animal Map View Controller-->
+        <scene sceneID="uYp-tG-7Ca">
+            <objects>
+                <viewController id="LJ5-ax-tns" customClass="AnimalMapViewController" customModule="iMoose" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kh1-D7-rv6"/>
+                        <viewControllerLayoutGuide type="bottom" id="nvE-wF-4G1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wJw-Qc-fao">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="GCq-gZ-gd2">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="63" width="400" height="737"/>
+                                </variation>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="GCq-gZ-gd2"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="GCq-gZ-gd2"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="GCq-gZ-gd2" id="gzF-uB-PD0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UPs-pl-rZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2076" y="300.75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aAb-v6-7sY">
