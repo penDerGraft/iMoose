@@ -20,7 +20,13 @@ extension Animal : MKAnnotation {
         var nf = NSNumberFormatter()
         let weightAsString = nf.stringFromNumber(weight)
         
-        return color + " - " + weightAsString! + "lbs"
+        var dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd 'at' HH:mm"
+        
+        var formattedDate = dateFormatter.stringFromDate(date)
+        
+        return formattedDate
      }
+
 }
  

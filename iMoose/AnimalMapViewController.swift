@@ -83,22 +83,36 @@ class AnimalMapViewController: UIViewController, MKMapViewDelegate {
         }
     }
     
+    func mapView(mapView: MKMapView!, annotationView view: MKAnnotationView!, calloutAccessoryControlTapped control: UIControl!) {
+        performSegueWithIdentifier(Constants.ShowImageSegue, sender: view)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == Constants.ShowImageSegue {
+            if let point = (sender as? MKAnnotationView)?.annotation as? Animal {
+                if let ivc = segue.destinationViewController as? ImageViewController {
+                    ivc.image = UIImage(data: point.photo)
+                    ivc.species = point.species
+                    ivc.color = point.color
+                    
+                    var nf = NSNumberFormatter()
+                    var weightAsString = nf.stringFromNumber(point.weight)! + " lbs"
+                    ivc.weight = weightAsString
+                    
+                    var dateFormatter = NSDateFormatter()
+                    dateFormatter.dateFormat = "EEEE, MMMM d, y 'at' hh:mm"
+                    
+                    ivc.time = dateFormatter.stringFromDate(point.date)
+                }
+            }
+        }
+    }
+
     
     private struct Constants {
         static let LeftCalloutFrame = CGRect(x: 0, y: 0, width: 59, height: 59)
         static let AnnotationViewReuseIdentifier = "animal"
         static let ShowImageSegue = "Show Details"
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

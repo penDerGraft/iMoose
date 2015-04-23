@@ -22,6 +22,8 @@ class NewAnimalViewController: UIViewController, CLLocationManagerDelegate, UIIm
     
     var animalImage = UIImage(named:"default.png")
     
+    var sightingDate: NSDate?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +52,7 @@ class NewAnimalViewController: UIViewController, CLLocationManagerDelegate, UIIm
         let location = locations.last as! CLLocation
         
         coordinates = location.coordinate
+        sightingDate = location.timestamp
         
 //        lat = location.coordinate.latitude
 //        long = location.coordinate.longitude
@@ -122,6 +125,10 @@ class NewAnimalViewController: UIViewController, CLLocationManagerDelegate, UIIm
         if let image = animalImage {
             var imageData = UIImagePNGRepresentation(image)
             animal.setValue(imageData, forKey: "photo")
+        }
+        
+        if let date = sightingDate {
+            animal.setValue(date, forKey: "date")
         }
         
         println(coordinates.latitude)

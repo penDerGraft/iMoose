@@ -14,7 +14,9 @@ class Animal: NSManagedObject {
     @NSManaged var color: String
     @NSManaged var latitude: NSNumber
     @NSManaged var longitude: NSNumber
+    @NSManaged var photo: NSData
     @NSManaged var species: String
     @NSManaged var weight: NSNumber
-    @NSManaged var photo: NSData
+    @NSManaged var date: NSDate
+
 }

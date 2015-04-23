@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84263CA71AE98F600051ABFC /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84263CA61AE98F600051ABFC /* Animal.swift */; };
+		84263CA91AE997EA0051ABFC /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84263CA81AE997EA0051ABFC /* ImageViewController.swift */; };
 		845C62571AE5802700F48ACA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C62561AE5802700F48ACA /* AppDelegate.swift */; };
 		845C625A1AE5802700F48ACA /* iMoose.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 845C62581AE5802700F48ACA /* iMoose.xcdatamodeld */; };
 		845C625F1AE5802700F48ACA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845C625D1AE5802700F48ACA /* Main.storyboard */; };
@@ -16,7 +18,6 @@
 		845C627A1AE58B9500F48ACA /* NewAnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C62791AE58B9500F48ACA /* NewAnimalViewController.swift */; };
 		845C627C1AE58BD500F48ACA /* AnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C627B1AE58BD500F48ACA /* AnimalsViewController.swift */; };
 		847A80011AE88B3700E82005 /* MKAnimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A80001AE88B3700E82005 /* MKAnimal.swift */; };
-		847A80031AE8BE1000E82005 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A80021AE8BE0F00E82005 /* Animal.swift */; };
 		84886F7C1AE6FE37007F2574 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84886F7B1AE6FE37007F2574 /* MapKit.framework */; };
 		84886F7E1AE712BB007F2574 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84886F7D1AE712BB007F2574 /* CoreLocation.framework */; };
 		84886F801AE80BF5007F2574 /* AnimalMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84886F7F1AE80BF5007F2574 /* AnimalMapViewController.swift */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84263CA61AE98F600051ABFC /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		84263CA81AE997EA0051ABFC /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewController.swift; path = ../../../Downloads/Cassini/Cassini/ImageViewController.swift; sourceTree = "<group>"; };
 		845C62511AE5802700F48ACA /* iMoose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMoose.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845C62551AE5802700F48ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		845C62561AE5802700F48ACA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +49,6 @@
 		845C62791AE58B9500F48ACA /* NewAnimalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAnimalViewController.swift; sourceTree = "<group>"; };
 		845C627B1AE58BD500F48ACA /* AnimalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalsViewController.swift; sourceTree = "<group>"; };
 		847A80001AE88B3700E82005 /* MKAnimal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKAnimal.swift; sourceTree = "<group>"; };
-		847A80021AE8BE0F00E82005 /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		84886F7B1AE6FE37007F2574 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		84886F7D1AE712BB007F2574 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		84886F7F1AE80BF5007F2574 /* AnimalMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalMapViewController.swift; sourceTree = "<group>"; };
@@ -95,7 +97,7 @@
 		845C62531AE5802700F48ACA /* iMoose */ = {
 			isa = PBXGroup;
 			children = (
-				847A80021AE8BE0F00E82005 /* Animal.swift */,
+				84263CA61AE98F600051ABFC /* Animal.swift */,
 				845C62791AE58B9500F48ACA /* NewAnimalViewController.swift */,
 				847A80001AE88B3700E82005 /* MKAnimal.swift */,
 				845C625D1AE5802700F48ACA /* Main.storyboard */,
@@ -110,6 +112,7 @@
 		845C62541AE5802700F48ACA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				84263CA81AE997EA0051ABFC /* ImageViewController.swift */,
 				845C62601AE5802700F48ACA /* Images.xcassets */,
 				845C62621AE5802700F48ACA /* LaunchScreen.xib */,
 				845C62561AE5802700F48ACA /* AppDelegate.swift */,
@@ -245,8 +248,9 @@
 				84886F801AE80BF5007F2574 /* AnimalMapViewController.swift in Sources */,
 				845C627A1AE58B9500F48ACA /* NewAnimalViewController.swift in Sources */,
 				845C62571AE5802700F48ACA /* AppDelegate.swift in Sources */,
-				847A80031AE8BE1000E82005 /* Animal.swift in Sources */,
+				84263CA71AE98F600051ABFC /* Animal.swift in Sources */,
 				845C627C1AE58BD500F48ACA /* AnimalsViewController.swift in Sources */,
+				84263CA91AE997EA0051ABFC /* ImageViewController.swift in Sources */,
 				845C625A1AE5802700F48ACA /* iMoose.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
