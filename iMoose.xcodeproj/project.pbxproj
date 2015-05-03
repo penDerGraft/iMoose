@@ -99,6 +99,7 @@
 			children = (
 				84263CA61AE98F600051ABFC /* Animal.swift */,
 				845C62791AE58B9500F48ACA /* NewAnimalViewController.swift */,
+				84263CA81AE997EA0051ABFC /* ImageViewController.swift */,
 				847A80001AE88B3700E82005 /* MKAnimal.swift */,
 				845C625D1AE5802700F48ACA /* Main.storyboard */,
 				84886F7F1AE80BF5007F2574 /* AnimalMapViewController.swift */,
@@ -112,7 +113,6 @@
 		845C62541AE5802700F48ACA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				84263CA81AE997EA0051ABFC /* ImageViewController.swift */,
 				845C62601AE5802700F48ACA /* Images.xcassets */,
 				845C62621AE5802700F48ACA /* LaunchScreen.xib */,
 				845C62561AE5802700F48ACA /* AppDelegate.swift */,

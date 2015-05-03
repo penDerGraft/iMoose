@@ -20,7 +20,7 @@ class NewAnimalViewController: UIViewController, CLLocationManagerDelegate, UIIm
         longitude: 0.0
     )
     
-    var animalImage = UIImage(named:"default.png")
+    var animalImage = UIImage(named: "default3")
     
     var sightingDate: NSDate?
     
@@ -82,6 +82,9 @@ class NewAnimalViewController: UIViewController, CLLocationManagerDelegate, UIIm
         var image = info[UIImagePickerControllerOriginalImage] as? UIImage
         if let newImage = image {
             animalImage = image!
+//            animalImage?.imageOrientation = .Up
+//            NSUserDefaults defaults = NSUserDefaults()
+//            defaults.integer = animalImage.o
         }
         dismissViewControllerAnimated(true, completion: nil)
         
@@ -123,6 +126,7 @@ class NewAnimalViewController: UIViewController, CLLocationManagerDelegate, UIIm
         }
         
         if let image = animalImage {
+            
             var imageData = UIImagePNGRepresentation(image)
             animal.setValue(imageData, forKey: "photo")
         }
